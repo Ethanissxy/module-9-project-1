@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: Photography</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="One of my biggest hobbies is Photography. I love taking pictures of my beautiful family. Theres something about it that's quite invigourating. It's as if I'm immortalizing a memory. Read more articles here.">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, Script Writer, Family, Photography, Technology">
     <link rel="stylesheet" href="css/normalize.css">
@@ -30,7 +32,7 @@
 
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>
@@ -49,7 +51,7 @@
 
             </a>
         </div>
-    
+
        <div class="blog-content background border">
             <a href="blog-post-cs-lewis.php">
 
@@ -61,7 +63,7 @@
 
             </a>
         </div>
-    
+
        <div class="blog-content background border">
             <a href="blog-post-writing-on-writers.php">
 
@@ -86,7 +88,7 @@
             </a>
         </div>
     </article>
-    
+
     <aside id="side-column" class="background border">
         <div class="side-column-content">
 

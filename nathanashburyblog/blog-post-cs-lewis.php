@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: CS Lewis Quotes</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="C S Lewis is another author whom I greatly admire. His writings span so many different facets of life. If you haven't read his Narnia series of books, then get them now and start reading! Here are some of his quotes">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, CS Lewis, Narnia, Writing, Quotes">
     <link rel="stylesheet" href="css/normalize.css">
@@ -30,7 +32,7 @@
 
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>

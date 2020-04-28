@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: Writing on writers</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="Hello! I'm Nathan Ashbury a proffessional scriptwriter and this is my blog. Inside you will find articles I have written ranging from family, technology and photography.">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, Maya Angelou, Louis de Bernieres, Jack London, George Eliot, John Grisham, Zane Grey, Writing on writers">
     <link rel="stylesheet" href="css/normalize.css">
@@ -30,7 +32,7 @@
 
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>

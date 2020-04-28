@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: Friends, Romans, countrymen</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="This post is about F. Scott Fitzgerald's The Great Gatsby. Gatsby is a story of love, loneliness, and the Lost Generation of the 1920s">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, Gatsby, Scott Fitzgerald, Love, Loneliness, Friends, Romans, Countrymen">
     <link rel="stylesheet" href="css/normalize.css">
@@ -29,7 +31,7 @@
 </head>
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>

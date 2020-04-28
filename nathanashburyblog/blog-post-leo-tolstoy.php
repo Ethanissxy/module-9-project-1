@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: Leo Tolstoy's famous novel War and Peace</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="I shall be very charmed to see you tonight between 7 and 10 - Annette Scherer.">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, Leo Tolstoy, War and Peace, Anna Pavlovna, Antichrist">
     <link rel="stylesheet" href="css/normalize.css">
@@ -30,7 +32,7 @@
 
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>

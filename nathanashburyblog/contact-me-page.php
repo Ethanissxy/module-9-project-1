@@ -16,8 +16,10 @@
     </script>
 
     <title>Nathan Ashbury: Contact Me</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Nathan Ashbury">
+    <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="Here are ways to contact me below, otherwise use the form.">
     <meta name="keywords" content="Nathan, Ashbury, Nathan Ashbury, Blog, Contact, Social Media, Twitter, LinkedIn, Email">
     <link rel="stylesheet" href="css/normalize.css">
@@ -30,7 +32,7 @@
 
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>

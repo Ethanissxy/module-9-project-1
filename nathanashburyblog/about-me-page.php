@@ -16,6 +16,8 @@
     </script>
 
     <title>Nathan Ashbury: About Me</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nathan Ashbury">
     <meta name="description" content="As a young adult I had returned to my home country, the UK, and after writing almost anything for almost anyone landed a job with the BBC as a script writer. I was eventually promoted to script editor doing such things as finding new script writer">
@@ -29,7 +31,7 @@
 </head>
 <body>
     <header id="fixedhead" class="background border">
-        <a href="index-page.php">
+        <a href="index.php">
             <h1><span class="colored">Nathan</span> Ashbury</h1>
         </a>
         <?php include './includes/navigation.php'; ?>
