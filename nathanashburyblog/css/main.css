@@ -1,0 +1,1197 @@
+/*Version 6 File Ethan Longhurst 12:18pm 27th April 2020*/
+
+/***** Global ***/
+/****************/
+/****************/
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+body {
+    background-color: #00a690;
+    background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.border {
+    border: 1rem ridge #663c1e;
+}
+
+.background {
+background-color: #ffea00;
+}
+
+
+.invis {
+    display: inline;
+    visibility: hidden;
+}
+
+.arrow {
+    padding: .1rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+    position: relative;
+    left: -2rem;
+    padding-bottom: .5rem
+}
+
+.arrow:before {
+    content: '\2bc8';
+    margin-right: 1rem;
+}
+
+.quote {
+    font-size: 1.50rem;
+    font-style: italic;
+}
+
+.colored,
+.currentpage a {
+    color: red;
+}
+
+header a:hover,
+aside li a:hover {
+    color: #191970;
+}
+
+.clear {
+    clear: both;
+    /*Clears Both Floats and allows the Background of the body element to flow instead of Collapsed*/
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    bottom: 0;
+}
+ 
+/****************/
+/****************/
+/****************/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /***** General **/
+    /****************/
+    /****************/
+    /* HTML */
+    html {
+        background-repeat: repeat;
+        background-image: url("../img/bg3-min.png");
+        background-position: center;
+    }
+
+    /* Body */
+    body {
+        width: 70%;
+        margin: 0 auto;
+        border: 1.3rem ridge #e5d824;
+    }
+    /****************/
+    /****************/
+    /****************/
+
+
+    /***** Floats ***/
+    /****************/
+    /****************/
+    /* Float Left */
+    header h1,
+    header li,
+    #blog,
+    #picture,
+    .social img,
+    .blog-left-img,
+    .blog-left {
+        float: left;
+    }
+
+    /* Float Right */
+    header nav,
+    #side-column,
+    #email,
+    .blog-right-img,
+    .blog-right {
+        float: right;
+    }
+    /****************/
+    /****************/
+    /****************/
+
+    /**** Sticky ****/
+    /****************/
+    /****************/
+    #fixedhead,
+    #side-column {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    /* Head Position */
+    #fixedhead {
+        top: 0;
+    }
+    /****************/
+    /****************/
+    /****************/
+
+    #picture {
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    #picture img {
+        width: 100%;
+    }
+
+
+    /*  Position */
+    #side-column {
+        width: 20%;
+        top: 8rem;
+    }
+
+    #email {
+        width: 25%;
+    }
+
+    /***** Fonts ****/
+    /****************/
+    /****************/
+    /* Header Text Size */
+    header h1,
+    header a {
+        font-size: 5rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    aside li a {
+        font-size: 1.5rem;
+    }
+
+    .blog-content,
+    .blog-content-post h2 {
+        text-align: center;
+    }
+
+    .blog-content,
+    .blog-content-post p {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .blog-content,
+    .blog-content-post a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p,
+    a,
+    footer {
+        font-size: 1.75rem;
+    }
+
+    h2,
+    p {
+        padding: .5rem;
+    }
+
+    #side-column h2 {
+        text-align: center;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    /* Margins */
+    header nav,
+    header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Inline */
+    header li {
+        display: inline;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    #email .social img {
+        width: 20%;
+
+    }
+
+    #email .social nav {
+        margin-right: 10%;
+    }
+
+    #side-column .social img {
+        width: 40%;
+
+    }
+
+    #side-column .social nav {
+        margin-right: 30%;
+        margin-left: 15%;
+    }
+
+
+    /***** Blog *****/
+    /****************/
+    /****************/
+    #blog {
+        width: 75%;
+    }
+
+    .blog-content {
+        border-radius: 4rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-content:first-of-type {
+        margin-top: 1rem;
+        margin-left: 1rem;
+
+    }
+
+    .blog-content img {
+        width: 100%;
+    }
+
+    #blog-post {
+        width: 50%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .blog-content-post {
+        border-radius: 4rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    /* Side Content */
+    .border-small {
+        border-top: .3rem ridge black;
+    }
+
+    .social ul {
+        list-style-type: none;
+    }
+
+
+    .side-column-content img {
+        width: 70%;
+        text-align: center;
+        margin-left: 10%;
+        border-radius: 10rem;
+
+    }
+
+    /*** Email ******/
+    /****************/
+    /****************/
+    #email-list {
+        color: #ffffff;
+    }
+
+    #email-list form {
+        padding: 1rem;
+    }
+
+    #email-list input[type="email"] {
+        padding: 1rem;
+        width: 90%;
+        height: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #email-list input[type="message"] {
+        padding: 1rem;
+        width: 90%;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .email-button {
+        height: 3.2rem;
+        width: 99%;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0 2rem 0 2rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    #extra-space {
+        padding: 10rem;
+    }
+
+
+    .blog-left,
+    .blog-right {
+        width: 48%;
+        margin-top: 5%;
+    }
+
+    .blog-left-img,
+    .blog-right-img {
+        width: 50%;
+    }
+
+    #pad {
+        padding: 4.5rem;
+    }
+
+    .side-column-content p {
+        font-size: 1.6rem;
+    }
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* Body */
+    body {
+        width: 75%;
+        margin: 0 auto;
+        border: 1.3rem ridge #e5d824;
+
+    }
+
+    .quote {
+        font-size: 1.40rem;
+    }
+
+    /***** Floats ***/
+    /****************/
+    /****************/
+    /* Float Left */
+    header h1,
+    header li,
+    #blog,
+    #picture,
+    .social img,
+    .blog-left-img,
+    .blog-left {
+        float: left;
+    }
+
+    /* Float Right */
+    header nav,
+    #side-column,
+    #email,
+    .blog-right-img,
+    .blog-right {
+        float: right;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    /**** Sticky ****/
+    /****************/
+    /****************/
+    #fixedhead,
+    #side-column {
+        /*Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. */
+        position: -webkit-sticky;
+        /*Safari */
+        position: sticky;
+    }
+
+    /* Head Position */
+    #fixedhead {
+        top: 0;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    #picture {
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    #picture img {
+        width: 100%;
+    }
+
+
+    /*  Position */
+    #side-column {
+        width: 25%;
+        top: 8rem;
+    }
+
+
+
+    #email {
+        width: 25%;
+    }
+
+    /***** Fonts ****/
+    /****************/
+    /****************/
+    /* Header Text Size */
+    header h1,
+    header a {
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    aside li a {
+        font-size: 1.3rem;
+    }
+
+    .blog-content,
+    .blog-content-post h2 {
+        text-align: center;
+    }
+
+    .blog-content,
+    .blog-content-post p {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .blog-content,
+    .blog-content-post a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    p,
+    a,
+    footer {
+        font-size: 1.45rem;
+    }
+
+    h2,
+    p {
+        padding: .5rem;
+    }
+
+    #side-column h2 {
+        text-align: center;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    /* Margins */
+    header nav,
+    header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Inline */
+    header li {
+        display: inline;
+        padding: 0rem 1.5rem 0rem 2rem;
+    }
+
+    #email .social img {
+        width: 50%;
+
+    }
+
+    #email .social nav {
+        margin-right: 10%;
+    }
+
+    #side-column .social img {
+        width: 40%;
+
+    }
+
+    #side-column .social nav {
+        margin-right: 30%;
+        margin-left: 15%;
+    }
+
+
+    /***** Blog *****/
+    /****************/
+    /****************/
+    #blog {
+        width: 70%;
+    }
+
+    .blog-content {
+
+        border-radius: 4rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-content:first-of-type {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        border-radius: 4rem;
+    }
+
+    .blog-content img {
+        width: 100%;
+    }
+
+    #blog-post {
+        width: 50%;
+        margin: auto;
+    }
+
+    .blog-content-post {
+        border-radius: 4rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    /* Side Content */
+
+    .border-small {
+        border-top: .3rem ridge black;
+    }
+
+    .social ul {
+        list-style-type: none;
+    }
+
+    .side-column-content img {
+        width: 70%;
+        text-align: center;
+        margin-left: 10%;
+        border-radius: 10rem;
+
+    }
+
+    /*** Email ******/
+    /****************/
+    /****************/
+    #email-list {
+        color: #ffffff;
+    }
+
+    #email-list form {
+        padding: 1rem;
+    }
+
+    #email-list input[type="email"] {
+        padding: 1rem;
+        width: 90%;
+        height: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #email-list input[type="message"] {
+        padding: 1rem;
+        width: 90%;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .email-button {
+        height: 3.2rem;
+        width: 99%;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0 2rem 0 2rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    #extra-space {
+        padding: 2rem;
+    }
+
+
+    .blog-left,
+    .blog-right {
+        width: 48%;
+    }
+
+    .blog-left-img,
+    .blog-right-img {
+        width: 49%;
+        margin-top: 5%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Body */
+    body {
+        width: 80%;
+        margin: 0 auto;
+        border: 1rem ridge #e5d824;
+    }
+
+    /***** Floats ***/
+    /****************/
+    /****************/
+    /* Float Left */
+    header h1,
+    header li,
+
+
+    .social img,
+    .blog-left-img,
+    .blog-left {
+        float: left;
+    }
+
+    /* Float Right */
+    header nav,
+
+
+    .blog-right-img,
+    .blog-right {
+        float: right;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    /**** Sticky ****/
+    /****************/
+    /****************/
+    #fixedhead {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    /* Head Position */
+    #fixedhead {
+        top: 0;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+    .quote {
+        font-size: 1.35rem;
+    }
+
+    #picture {
+        width: 100%;
+
+    }
+
+    #picture img {
+        width: 100%;
+    }
+
+    /***** Fonts ****/
+    /****************/
+    /****************/
+    /* Header Text Size */
+    header h1,
+    header a {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    aside li a {
+        font-size: 1.3rem;
+    }
+
+    .blog-content,
+    .blog-content-post h2 {
+        text-align: center;
+    }
+
+    .blog-content,
+    .blog-content-post p {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .blog-content,
+    .blog-content-post a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    p,
+    a,
+    footer {
+        font-size: 1.15rem;
+    }
+
+    h2,
+    p {
+        padding: .5rem;
+    }
+
+    #side-column h2 {
+        text-align: left;
+    }
+
+
+    /****************/
+    /****************/
+    /****************/
+
+    /* Margins */
+    header nav,
+    header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Inline */
+    header li {
+        display: inline;
+        padding: 0rem 1.5rem 0rem 2rem;
+    }
+
+    #email .social img {
+        width: 50%;
+
+    }
+
+    #email .social nav {
+        margin-right: 10%;
+    }
+
+    #side-column .social img {
+        width: 40%;
+
+    }
+
+    #side-column .social nav {
+        margin-right: 30%;
+        margin-left: 15%;
+    }
+
+
+    /***** Blog *****/
+    /****************/
+    /****************/
+    #blog {
+        width: 100%;
+    }
+
+    .blog-content,
+    .blog-content-post {
+
+        border-radius: 4rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .blog-content:first-of-type {
+        margin-top: 1rem;
+
+        border-radius: 4rem;
+    }
+
+    .blog-content img {
+        width: 100%;
+    }
+
+    #blog-post {
+        width: 100%;
+    }
+
+    .blog-content-post {
+        border-radius: 4rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    /* Side Content */
+
+    .border-small {
+        border-top: .3rem ridge black;
+    }
+
+    .social ul {
+        list-style-type: none;
+    }
+
+    .side-column-content img {
+        width: 70%;
+        text-align: center;
+        margin-left: 10%;
+        border-radius: 10rem;
+
+    }
+
+    /*** Email ******/
+    /****************/
+    /****************/
+    #email-list {
+        color: #ffffff;
+    }
+
+    #email-list form {
+        padding: 1rem;
+    }
+
+    #email-list input[type="email"] {
+        padding: 1rem;
+        width: 90%;
+        height: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #email-list input[type="message"] {
+        padding: 1rem;
+        width: 90%;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .email-button {
+        height: 3.2rem;
+        width: 99%;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0 2rem 0 2rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    .blog-left,
+    .blog-right {
+        width: 48%;
+    }
+
+    .blog-left-img,
+    .blog-right-img {
+        width: 48%;
+        margin-top: 5%;
+    }
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles 
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* Body */
+    body {
+        width: 90%;
+        margin: 0 auto;
+        border: 1rem ridge #e5d824;
+    }
+
+    /***** Floats ***/
+    /****************/
+    /****************/
+    /* Float Left */
+
+    header li,
+    .social img,
+    .blog-left-img,
+    .blog-left {
+        float: left;
+    }
+
+    /* Float Right */
+    header nav,
+    .blog-right-img,
+    .blog-right {
+        float: right;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    /**** Sticky ****/
+    /****************/
+    /****************/
+    #fixedhead {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    /* Head Position */
+    #fixedhead {
+        top: 0;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    #picture {
+        width: 100%;
+
+    }
+
+    #picture img {
+        width: 100%;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+
+    /***** Fonts ****/
+    /****************/
+    /****************/
+    /* Header Text Size */
+    header h1,
+    header a {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    aside li a {
+        font-size: 1.3rem;
+    }
+
+    .blog-content,
+    .blog-content-post h2 {
+        text-align: center;
+    }
+
+    .blog-content,
+    .blog-content-post p {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .blog-content,
+    .blog-content-post a {
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    p,
+    a,
+    footer {
+        font-size: 1.15rem;
+    }
+
+    h2,
+    p {
+        padding: .5rem;
+    }
+
+    #side-column h2 {
+        text-align: left;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+    header h1 {
+        text-align: center;
+    }
+
+    /* Margins */
+    header nav,
+    header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Inline */
+    header li {
+        display: inline;
+        padding: 0rem 1.5rem 0rem 2rem;
+    }
+
+    #email .social img {
+        width: 50%;
+
+    }
+
+    #email .social nav {
+        margin-right: 10%;
+    }
+
+    #side-column .social img {
+        width: 40%;
+
+    }
+
+    #side-column .social nav {
+        margin-right: 30%;
+        margin-left: 15%;
+    }
+
+    /***** Blog *****/
+    /****************/
+    /****************/
+    #blog {
+        width: 100%;
+    }
+
+    .blog-content {
+        border-radius: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-content:first-of-type {
+        margin-top: 1rem;
+
+        border-radius: 4rem;
+    }
+
+    .blog-content img {
+        width: 100%;
+    }
+
+    #blog-post {
+        width: 100%;
+    }
+
+    .blog-content-post {
+        border-radius: 4rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/
+
+
+    /* Side Content */
+
+    .border-small {
+        border-top: .3rem ridge black;
+    }
+
+    .social ul {
+        list-style-type: none;
+    }
+
+    .side-column-content img {
+        width: 70%;
+        text-align: center;
+        margin-left: 10%;
+        border-radius: 10rem;
+
+    }
+
+    /*** Email ******/
+    /****************/
+    /****************/
+    #email-list {
+        color: #ffffff;
+    }
+
+    #email-list form {
+        padding: 1rem;
+    }
+
+    #email-list input[type="email"] {
+        padding: 1rem;
+        width: 90%;
+        height: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #email-list input[type="message"] {
+        padding: 1rem;
+        width: 90%;
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .email-button {
+        height: 3.2rem;
+        width: 99%;
+        background-color: blue;
+        color: #ffffff;
+        border: none;
+        padding: 0 2rem 0 2rem;
+    }
+
+    /****************/
+    /****************/
+    /****************/   
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    body{
+        background-color: darkgray;
+    }
+    
+  .background {
+    background-color: #101010;
+  }
+    
+  * {
+        color: white;
+    }
+   
+}
